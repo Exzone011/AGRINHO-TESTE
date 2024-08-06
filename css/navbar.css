@@ -14,13 +14,14 @@
 
     position: fixed; /* Mudança: agora o menu é fixo */
     top: 0; /* Mudança: fixa o menu no topo */
-    width: calc(100% - 7em); /* Ajusta a largura para considerar o espaçamento à esquerda */
-    margin-left: 7em; /* Adiciona o espaçamento à esquerda */
     z-index: 600;
 
     display: grid;
     grid-auto-flow: column;
     grid-gap: 2em;
+    max-width: 1024px;
+	min-width: 320px;
+	margin: 0 auto;
 }
 
 .navbar-logo {
